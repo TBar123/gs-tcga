@@ -1,0 +1,11 @@
+##This is to transpose the original file: EBPlusPlusAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv
+## downloaded from https://gdc.cancer.gov/about-data/publications/pancanatlas 
+##the data needs to be transposed before running code
+Compiled transpose.c in UNIX using:
+gcc -o transpose.c transpose
+
+Made transpose runnable in UNIX: 
+chmod a+x transpose
+
+Transposed TCGA Tsv file in Unix using:  
+./transpose -t -l 30000x14000 EBPlusPlusAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv > EBPlusPlusAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp_transposed.tsv
